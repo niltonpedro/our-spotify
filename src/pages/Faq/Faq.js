@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Footer from '../../components/Footer/Footer'
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -125,6 +126,11 @@ function Faq() {
             </button>
           </div>
         </div>
+
+        <div id="footer">
+          <Footer/>
+        </div>
+        
     </>
   );
 }

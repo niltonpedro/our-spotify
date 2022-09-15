@@ -1,5 +1,6 @@
 import Card from '@mui/material/Card';
 import './Home.css';
+import Footer from '../../components/Footer/Footer'
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
@@ -196,7 +197,7 @@ function Home() {
                 </div>
 
                 <div className="card5">
-                    <Card sx={{ maxWidth: 345 }}>
+                    <Card id='cardIt' sx={{ maxWidth: 345 }}>
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -222,6 +223,11 @@ function Home() {
                 </div>
 
             </div>
+            <div id="footer">
+                <Footer/>
+            </div>
+            
+            
         </>
     );
   }

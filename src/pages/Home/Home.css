@@ -4,3 +4,10 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
