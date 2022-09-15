@@ -1,0 +1,21 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin: 5% 0 10% 0;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.btn-comunidade {
+    display: block;
+    left: 20%;
+    background-color: rgb(39, 177, 39);
+    color: black;
+    border-radius: 80px;
+    padding: 20px;
+}
