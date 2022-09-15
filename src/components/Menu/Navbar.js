@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import logo from '../../assets/menu/logoSpotify.png';
+import { Link } from 'react-router-dom';
 
 const pages = ['Home', 'Faq'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -101,7 +102,9 @@ const Navbar = () => {
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">
-                      {page}
+                      <Link to={`${'/' + page}`}>
+                        {page}
+                      </Link>
                     </Typography>
                   </MenuItem>
                 ))}
@@ -133,7 +136,9 @@ const Navbar = () => {
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
-                  {page}
+                  <Link to={`${'/' + page}`}>
+                    {page}
+                  </Link>
                 </Button>
               ))}
             </Box>
