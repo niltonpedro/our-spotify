@@ -20,16 +20,17 @@ function Home() {
                             />
                                 <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Listen Bilie Elish
+                                    This is Bilie Elish
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Bilie is the best artist int the rock
+                                Billie Eilish Pirate Baird O'Connell, 
+                                mais conhecida como Billie Eilish, é uma cantora e compositora estadunidense. 
                                 </Typography>
                                 </CardContent>
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" color="primary">
-                            Share
+                            Escutar playlist
                             </Button>
                         </CardActions>
                         </Card>
@@ -41,21 +42,21 @@ function Home() {
                             <CardMedia
                             component="img"
                             height="140"
-                            image={require('../../assets/homepage/Yoga.jpg')}
+                            image={require('../../assets/homepage/AcDc.jpg')}
                             alt="Bilie album"
                             />
                                 <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Listen Bilie Elish
+                                    This is AcDC 
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Bilie is the best artist int the rock
+                                AC/DC é uma banda australiana de rock formada em Sydney, Austrália em 1973, pelos irmãos escoceses Malcolm e Angus Young.
                                 </Typography>
                                 </CardContent>
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" color="primary">
-                            Share
+                            Escutar playlist
                             </Button>
                         </CardActions>
                         </Card>
@@ -67,47 +68,21 @@ function Home() {
                             <CardMedia
                             component="img"
                             height="140"
-                            image={require('../../assets/homepage/AcDc.jpg')}
+                            image={require('../../assets/homepage/red_Hot.jpg')}
                             alt="Bilie album"
                             />
                                 <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Listen Bilie Elish
+                                    This is Red Hot 
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Bilie is the best artist int the rock
+                                Red Hot Chili Peppers é uma banda de rock dos Estados Unidos formada em Los Angeles, Califórnia, em 13 de fevereiro de 1983.
                                 </Typography>
                                 </CardContent>
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" color="primary">
-                            Share
-                            </Button>
-                        </CardActions>
-                        </Card>
-                </div>
-
-                <div className="card4">
-                    <Card sx={{ maxWidth: 345 }}>
-                        <CardActionArea>
-                            <CardMedia
-                            component="img"
-                            height="140"
-                            image={require('../../assets/homepage/AcDc.jpg')}
-                            alt="Bilie album"
-                            />
-                                <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    Listen Bilie Elish
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    Bilie is the best artist int the rock
-                                </Typography>
-                                </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary">
-                            Share
+                            Escutar playlist
                             </Button>
                         </CardActions>
                         </Card>
@@ -119,21 +94,21 @@ function Home() {
                             <CardMedia
                             component="img"
                             height="140"
-                            image={require('../../assets/homepage/AcDc.jpg')}
+                            image={require('../../assets/homepage/slipknot.jpg')}
                             alt="Bilie album"
                             />
                                 <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Listen Bilie Elish
+                                    This is Slipknot
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Bilie is the best artist int the rock
+                                    Slipknot é uma banda norte-americana de metal formada em Des Moines, Iowa, em 1995. Seu estilo musical é o nu metal,
                                 </Typography>
                                 </CardContent>
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" color="primary">
-                            Share
+                            Escutar playlist
                             </Button>
                         </CardActions>
                         </Card>
@@ -148,21 +123,21 @@ function Home() {
                             <CardMedia
                             component="img"
                             height="140"
-                            image={require('../../assets/homepage/bilie.jpg')}
+                            image={require('../../assets/homepage/Treino.jpg')}
                             alt="Bilie album"
                             />
                                 <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Listen Bilie Elish
+                                    Bora treinar!
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Bilie is the best artist int the rock
+                                    Ganhe aquele incentivo na hora no treino da academia, corrida ou em casa! Melhores músicas para dar aquele gás!
                                 </Typography>
                                 </CardContent>
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" color="primary">
-                            Share
+                            Escutar playlist
                             </Button>
                         </CardActions>
                         </Card>
@@ -174,21 +149,21 @@ function Home() {
                             <CardMedia
                             component="img"
                             height="140"
-                            image={require('../../assets/homepage/Yoga.jpg')}
+                            image={require('../../assets/homepage/number1.jpg')}
                             alt="Bilie album"
                             />
                                 <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Listen Bilie Elish
+                                    This is Pabllo Vittar 
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Bilie is the best artist int the rock
+                                Phabullo Rodrigues da Silva, conhecido por seu nome artístico Pabllo Vittar, é um cantor e drag queen brasileiro
                                 </Typography>
                                 </CardContent>
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" color="primary">
-                            Share
+                            Escutar playlist
                             </Button>
                         </CardActions>
                         </Card>
@@ -200,47 +175,21 @@ function Home() {
                             <CardMedia
                             component="img"
                             height="140"
-                            image={require('../../assets/homepage/AcDc.jpg')}
+                            image={require('../../assets/homepage/bastille.jpg')}
                             alt="Bilie album"
                             />
                                 <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Listen Bilie Elish
+                                    This is Bastille
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Bilie is the best artist int the rock
+                                    Bastille é uma banda de origem britânica formada em Londres, em 2010. Originalmente um projeto solo do cantor Dan Smith
                                 </Typography>
                                 </CardContent>
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" color="primary">
-                            Share
-                            </Button>
-                        </CardActions>
-                        </Card>
-                </div>
-
-                <div className="card4">
-                    <Card sx={{ maxWidth: 345 }}>
-                        <CardActionArea>
-                            <CardMedia
-                            component="img"
-                            height="140"
-                            image={require('../../assets/homepage/AcDc.jpg')}
-                            alt="Bilie album"
-                            />
-                                <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    Listen Bilie Elish
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    Bilie is the best artist int the rock
-                                </Typography>
-                                </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary">
-                            Share
+                            Escutar playlist
                             </Button>
                         </CardActions>
                         </Card>
@@ -252,28 +201,27 @@ function Home() {
                             <CardMedia
                             component="img"
                             height="140"
-                            image={require('../../assets/homepage/AcDc.jpg')}
+                            image={require('../../assets/homepage/lastdino.webp')}
                             alt="Bilie album"
                             />
                                 <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Listen Bilie Elish
+                                    This is Last Dinosaurs
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Bilie is the best artist int the rock
+                                    Last Dinosaurs é uma banda de rock indie australiana de Brisbane, Queensland. A banda é composta pelo vocalista e guitarrista Sean
                                 </Typography>
                                 </CardContent>
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" color="primary">
-                            Share
+                            Escutar playlist
                             </Button>
                         </CardActions>
                         </Card>
                 </div>
 
             </div>
-            
         </>
     );
   }
