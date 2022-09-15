@@ -101,11 +101,11 @@ const Navbar = () => {
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">
-                      <Link to={`${'/' + page}`}>
+                    <Link to={`${'/' + page}`}>
+                      <Typography textAlign="center">
                         {page}
-                      </Link>
-                    </Typography>
+                      </Typography>
+                    </Link>
                   </MenuItem>
                 ))}
               </Menu>
