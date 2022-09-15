@@ -33,6 +33,131 @@ function Home() {
                     </Button>
                 </CardActions>
                 </Card>
+
+                <Card sx={{ maxWidth: 345 }}>
+                <CardActionArea>
+                    <CardMedia
+                    component="img"
+                    height="140"
+                    image="../../assets/homepage/AcDc.jpg"
+                    alt="green iguana"
+                    />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            AcDc
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            Lizards are a widespread group of squamate reptiles, with over 6,000
+                            species, ranging across all continents except Antarctica
+                        </Typography>
+                        </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Button size="small" color="primary">
+                    Share
+                    </Button>
+                </CardActions>
+                </Card>
+
+                <Card sx={{ maxWidth: 345 }}>
+                <CardActionArea>
+                    <CardMedia
+                    component="img"
+                    height="140"
+                    image="../../assets/homepage/Cozinhando.jpeg"
+                    alt="green iguana"
+                    />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Cozinhando e cantando
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            Lizards are a widespread group of squamate reptiles, with over 6,000
+                            species, ranging across all continents except Antarctica
+                        </Typography>
+                        </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Button size="small" color="primary">
+                    Share
+                    </Button>
+                </CardActions>
+                </Card>
+
+                <Card sx={{ maxWidth: 345 }}>
+                <CardActionArea>
+                    <CardMedia
+                    component="img"
+                    height="140"
+                    image="../../assets/homepage/Discos.jpg"
+                    alt="green iguana"
+                    />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Moda Discol....
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            Lizards are a widespread group of squamate reptiles, with over 6,000
+                            species, ranging across all continents except Antarctica
+                        </Typography>
+                        </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Button size="small" color="primary">
+                    Share
+                    </Button>
+                </CardActions>
+                </Card>
+
+                <Card sx={{ maxWidth: 345 }}>
+                <CardActionArea>
+                    <CardMedia
+                    component="img"
+                    height="140"
+                    image="../../assets/homepage/FocoNoTrabalho.jpeg"
+                    alt="green iguana"
+                    />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Foco no trabalho.
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            Lizards are a widespread group of squamate reptiles, with over 6,000
+                            species, ranging across all continents except Antarctica
+                        </Typography>
+                        </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Button size="small" color="primary">
+                    Share
+                    </Button>
+                </CardActions>
+                </Card>
+
+                <Card sx={{ maxWidth: 345 }}>
+                <CardActionArea>
+                    <CardMedia
+                    component="img"
+                    height="140"
+                    image="../../assets/homepage/red_Hot.jpg"
+                    alt="green iguana"
+                    />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                        Red Hot Chili Peppers Californication
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            Lizards are a widespread group of squamate reptiles, with over 6,000
+                            species, ranging across all continents except Antarctica
+                        </Typography>
+                        </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Button size="small" color="primary">
+                    Share
+                    </Button>
+                </CardActions>
+                </Card>
             </div>
 
         </div>
