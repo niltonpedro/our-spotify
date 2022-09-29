@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.checkbox input{
+    margin: 10px 15px;
+}
+
+.btn {
+    background: green;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
