@@ -16,7 +16,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import logo from '../../assets/menu/logoSpotify.png';
 import { Link } from 'react-router-dom';
 
-const pages = ['Home', 'Faq'];
+const pages = ['Home', 'Faq', 'Inscrever-se'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Navbar = () => {
