@@ -51,7 +51,7 @@ function Home() {
                                     Bossa N'Marley
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                   É uma seleção dos classicos do Boby Marley cantados em ritimo de Bossa nova
+                                   É uma seleção dos classicos do Boby Marley cantados em ritimo de Bossa nova, Bossa n' Marley inclui hinos para irmandade universal.
                                 </Typography>
                                 </CardContent>
                         </CardActionArea>
