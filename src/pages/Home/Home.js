@@ -1,16 +1,18 @@
 import Card from '@mui/material/Card';
 import './Home.css';
-import Footer from '../../components/Footer/Footer'
+import Reprodutor from '../playlists/BilieElish';// fazer para cada album..
+import Footer from '../../components/Footer/Footer';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-
+// colocar o <Reprodutor/> em cada album...
 function Home() {
     return (
         <>
             <div className="content" id='BoxCards1'>
                 <div className="card1">
+                    <Reprodutor/> 
                     <Card sx={{ maxWidth: 345 }}>
                         <CardActionArea>
                             <CardMedia
