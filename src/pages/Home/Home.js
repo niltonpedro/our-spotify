@@ -43,15 +43,15 @@ function Home() {
                             <CardMedia
                             component="img"
                             height="140"
-                            image={require('../../assets/homepage/AcDc.jpg')}
+                            image={require('../../assets/homepage/bossa_NMarley.jpg')}
                             alt="Bilie album"
                             />
                                 <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    This is AcDC 
+                                    Bossa N'Marley
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                AC/DC é uma banda australiana de rock formada em Sydney, Austrália em 1973, pelos irmãos escoceses Malcolm e Angus Young.
+                                   É uma seleção dos classicos do Boby Marley cantados em ritimo de Bossa nova
                                 </Typography>
                                 </CardContent>
                         </CardActionArea>
