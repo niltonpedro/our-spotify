@@ -49,7 +49,12 @@ function ValidationTextFields() {
 
     console.log(users);
 
-    if (!validate()) return;
+    if (!validate()) {
+      console.log(status);
+      return;
+    } else {
+      console.log(status);
+    }
 
     const saveDataForm = true;
 
@@ -61,8 +66,11 @@ function ValidationTextFields() {
       setUser({
         name: '',
         email: '',
-        password: ''
+        confirmar_email: '',
+        password: '',
+        date: ''
       });
+      console.log(status);
     } else {
       setStatus({
         type: 'error',
@@ -72,8 +80,9 @@ function ValidationTextFields() {
   }
 
   function validate() {
-    if (!user.name) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo nome!' });
+    if (!user.name) return setStatus({ type: 'error', mensagem: "Erro: Necessário preencher o campo nome!" });
     if (!user.email) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo e-mail!' });
+    if (user.email !== user.confirmar_email) return setStatus({ type: 'error', mensagem: 'Erro: Campo e-mail diferente da confirmação de e-mail!' });
     if (!user.password) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo senha!' });
     if (user.password.length < 6) return setStatus({ type: 'error', mensagem: 'Erro: A senha precisa ter pelo menos seis caracteres!' });
 
@@ -87,7 +96,7 @@ function ValidationTextFields() {
 
         <h3 >Inscreva-se com seu endereço de E-mail</h3>
         <TextField
-          id="outlined-error"
+          id="email"
           label="E-mail"
           variant="outlined"
           name="email"
@@ -95,7 +104,7 @@ function ValidationTextFields() {
           onChange={valueInput}
         />
         <TextField
-          id="outlined-error-helper-text"
+          id="confirmar"
           label="Confirmar E-mail"
           variant="outlined"
           name="confirmar_email"
@@ -103,7 +112,7 @@ function ValidationTextFields() {
           onChange={valueInput}
         />
         <TextField
-          id="outlined-error-helper-text"
+          id="senha"
           type='password'
           label="Senha"
           variant="outlined"
@@ -112,7 +121,7 @@ function ValidationTextFields() {
           onChange={valueInput}
         />
         <TextField
-          id="outlined-error-helper-text"
+          id="nomeuser"
           label="Como devemos chamar você?"
           variant="outlined"
           name="name"
@@ -120,7 +129,7 @@ function ValidationTextFields() {
           onChange={valueInput}
         />
         <TextField
-          id="outlined-error-helper-text"
+          id="date"
           type='date'
           variant="outlined"
           name="date"
@@ -128,10 +137,9 @@ function ValidationTextFields() {
           onChange={valueInput}
         />
         <div className='checkbox'>
-          <input type='checkbox' />Maculino
-          <input type='checkbox' />Feminino
-          <input type='checkbox' />Não binário
-
+          <input type='radio' name='genero' onChange={valueInput} />Maculino
+          <input type='radio' name='genero' onChange={valueInput} />Feminino
+          <input type='radio' name='genero' onChange={valueInput} />Não binário
         </div>
         <button className='btn'>
           Inscreva-se
