@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './Playlist.css'
 import bilie from '../../assets/homepage/bilie.jpg';
-
+import BilieElish from '../playlists/BilieElish'
 class Playlist extends Component {
+
     render() {
         return (
+            
             <div className='background' >
-
                 <div className="pictureAndTitle">
                     <div className="content">
                         <img src={bilie} alt="bilieAlbum" />
@@ -19,8 +20,7 @@ class Playlist extends Component {
                         <li>
                             <div className="blocos">
                                 <div className="comandsMusic">
-                                    <button>Pause</button>
-                                    <button>Play</button>
+                                    <BilieElish/>
                                 </div>
                                 <div className="MusicInfo">
                                     <div className="title">
