@@ -1,0 +1,11 @@
+.cardlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.uniqueCard {
+    margin-top: 30px;
+
+}
