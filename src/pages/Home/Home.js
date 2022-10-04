@@ -1,6 +1,8 @@
 import Card from '@mui/material/Card';
 import './Home.css';
 import Reprodutor from '../playlists/BilieElish';// fazer para cada album..
+import ReprodutorBM from '../playlists/BossaNMarley';
+import ReprodutorRH from '../playlists/RED_HOT';
 import Footer from '../../components/Footer/Footer';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -40,6 +42,7 @@ function Home() {
                 </div>
 
                 <div className="card2">
+                    <ReprodutorBM/> 
                     <Card sx={{ maxWidth: 345 }}>
                         <CardActionArea>
                             <CardMedia
@@ -67,6 +70,7 @@ function Home() {
                 </div>
 
                 <div className="card3">
+                    <ReprodutorRH/> 
                     <Card sx={{ maxWidth: 345 }}>
                         <CardActionArea>
                             <CardMedia

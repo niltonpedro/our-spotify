@@ -1,6 +1,6 @@
 import { AudioPlaylist } from 'ts-audio';
 import goodgirls from '../../assets/goodgirls.mp3';
-// import Amazonics from '../../Assets/Music/bossa NMarley';
+
 
 export default function Reprodutor() {
   const playlist = AudioPlaylist({
