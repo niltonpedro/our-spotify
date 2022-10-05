@@ -100,7 +100,7 @@ export default function Playlist() {
                             </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Button size="small" color="primary">
+                        <Button size="small"  href='/playlist' >
                             {play.callAction}
                         </Button>
                     </CardActions>

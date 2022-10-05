@@ -2,7 +2,32 @@ import React, { Component } from 'react';
 import './Playlist.css'
 import bilie from '../../assets/homepage/bilie.jpg';
 import BilieElish from '../playlists/BilieElish'
+
+const musics = [
+    {
+        title: 'This is Bilie Elish',
+        nameMusic: 'All good girls',
+        artist: 'Billie elish',
+    },
+    {
+        title: 'You make me hate this city',
+        nameMusic: 'You make me hate this city',
+        artist: 'Billie elish and Dua Lipa',
+    },
+    {
+        title: 'Nowdays paranoia',
+        nameMusic: 'Nowdays paranoia',
+        artist: 'Billie elish and Post malone',
+    },
+    {
+        title: 'Think out',
+        nameMusic: 'Think out',
+        artist: 'Billie elish',
+    }
+];
 class Playlist extends Component {
+
+    
 
     render() {
         return (
@@ -16,25 +41,26 @@ class Playlist extends Component {
                 </div>
 
                 <div className="listOfMusics">
-                    <ul>
-                        <li>
-                            <div className="blocos">
-                                <div className="comandsMusic">
-                                    <BilieElish/>
-                                </div>
-                                <div className="MusicInfo">
-                                    <div className="title">
-                                        <span>All good girls</span>
+                        {musics.map( music => (
+                            <ul>
+                                <li>
+                                    <div className="blocos">
+                                        <div className="comandsMusic">
+                                            <BilieElish/>
+                                        </div>
+                                        <div className="MusicInfo">
+                                            <div className="title">
+                                                <span>{music.nameMusic}</span>
+                                            </div>
+                                            <div className="artista">
+                                                <span>{music.artist}</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="artista">
-                                        <span>Bilie Elish</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                </div>
+                                </li>                
+                            </ul>
+                        ))}
+                </div>   
             </div>
         );
     }

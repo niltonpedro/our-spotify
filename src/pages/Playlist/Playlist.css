@@ -51,12 +51,23 @@ body {
 
 .background .listOfMusics .blocos {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 .background .listOfMusics .blocos .comandsMusic button {
     margin-left: 3px;
+    margin-right: 5px;
 }
 
-.background .listOfMusics .blocos .MusicInfo {
+.background .listOfMusics .blocos {
+    
+}
+
+.background .listOfMusics .blocos .MusicInfo ul {
+
+    display: flex;
+    
 
 }
 .background .listOfMusics .blocos .MusicInfo .title {
@@ -69,5 +80,4 @@ body {
     font: 16px Roboto, sans-serif;
     color: #888A8B;
     font-weight: bold;
-
 }
