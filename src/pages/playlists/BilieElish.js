@@ -28,8 +28,8 @@ export default function Reprodutor() {
     <>
       <button onClick={play}>Play</button>
       <button onClick={pause}>Pause</button>
-      <button onClick={next}>Next</button>
-      <button onClick={stop}>Stop</button>
+      {/* <button onClick={next}>Next</button>
+      <button onClick={stop}>Stop</button> */}
     </>
   )
 }

@@ -57,7 +57,7 @@ export default function Playlist() {
         {
             id: 6,
             title: 'this is Last Dinassour', 
-            description: 'Billie Eilish Pirate Baird OConnell,mais conhecida como Billie Eilish, é uma cantora e compositora estadunidense.', 
+            description: 'Last dinoussaur is Baird OConnell,mais conhecida como Billie Eilish, é uma cantora e compositora estadunidense.', 
             callAction: 'Escutar Playlist bilie!',
             image: lastdino
         },
@@ -100,7 +100,7 @@ export default function Playlist() {
                             </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Button size="small" color="primary">
+                        <Button size="small"  href='/playlist' >
                             {play.callAction}
                         </Button>
                     </CardActions>
