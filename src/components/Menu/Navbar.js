@@ -16,7 +16,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import logo from '../../assets/menu/logoSpotify.png';
 import { Link } from 'react-router-dom';
 
-const pages = ['Home', 'Faq'];
+const pages = ['Home', 'Faq', 'Inscrever-se'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Navbar = () => {
@@ -101,11 +101,11 @@ const Navbar = () => {
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">
-                      <Link to={`${'/' + page}`}>
+                    <Link to={`${'/' + page}`}>
+                      <Typography textAlign="center">
                         {page}
-                      </Link>
-                    </Typography>
+                      </Typography>
+                    </Link>
                   </MenuItem>
                 ))}
               </Menu>
