@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #605F5F;
+
+}
+.background {
+    display: flex;
+    margin-top: 100px;
+}
+
+.background .pictureAndTitle .content {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.background .pictureAndTitle .content img {
+    width: 450px;
+    height: 450px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.background .pictureAndTitle .content span {
+    margin-top: 50px;
+    font: 48px Roboto, sans-serif;
+    color: #ffff;
+    line-height: bolder;
+    
+}
+
+.background .pictureAndTitle .content {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.background .listOfMusics {
+    margin-left: 180px;
+}
+.background .listOfMusics ul{
+    list-style-type: none;
+}
+
+.background .listOfMusics .blocos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.background .listOfMusics .blocos .comandsMusic button {
+    margin-left: 3px;
+    margin-right: 5px;
+}
+
+.background .listOfMusics .blocos {
+    
+}
+
+.background .listOfMusics .blocos .MusicInfo ul {
+
+    display: flex;
+    
+
+}
+.background .listOfMusics .blocos .MusicInfo .title {
+    font: 22px Roboto, sans-serif;
+    color: #ffff;
+    font-weight: bold;
+
+}
+.background .listOfMusics .blocos .MusicInfo .artista {
+    font: 16px Roboto, sans-serif;
+    color: #888A8B;
+    font-weight: bold;
+}
