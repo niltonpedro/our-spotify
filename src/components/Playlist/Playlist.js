@@ -13,9 +13,10 @@ import lastdino from '../../assets/homepage/lastdino.webp';
 import number1 from '../../assets/homepage/number1.jpg';
 import redHot from '../../assets/homepage/red_Hot.jpg';
 import slipknot from '../../assets/homepage/slipknot.jpg';
+export default Playlist;
 
 
-export default function Playlist() {
+function Playlist() {
     const dadosPlays = [
         {
             id: 1,
@@ -100,7 +101,7 @@ export default function Playlist() {
                             </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Button size="small"  href='/playlist' >
+                        <Button size="small" color="primary">
                             {play.callAction}
                         </Button>
                     </CardActions>
@@ -111,4 +112,3 @@ export default function Playlist() {
     // </div>
    );
 };
-
