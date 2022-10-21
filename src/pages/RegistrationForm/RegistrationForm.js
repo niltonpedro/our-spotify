@@ -5,6 +5,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import '../RegistrationForm/RegistrationForm.css';
 import logo from '../../assets/menu/logoSpotify2.png';
 import users from './users';
+import { Link } from 'react-router-dom';
+import Home from '../Home/Home';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -92,14 +94,16 @@ function ValidationTextFields() {
   return (
     <form className={classes.root} noValidate autoComplete="off" onSubmit={e => addUser(e)}>
       <div className='container'>
-        <img src={logo} alt="logo" className='img' />
-
+        <Link to={'/Home'}>
+          <img src={logo} alt="logo" className='img' />
+        </Link>
         <h3 >Inscreva-se com seu endereço de E-mail</h3>
         <TextField
           id="email"
           label="E-mail"
           variant="outlined"
           name="email"
+          required={true}
           value={user.email}
           onChange={valueInput}
         />
@@ -108,6 +112,7 @@ function ValidationTextFields() {
           label="Confirmar E-mail"
           variant="outlined"
           name="confirmar_email"
+          required={true}
           value={user.confirmar_email}
           onChange={valueInput}
         />
@@ -117,6 +122,7 @@ function ValidationTextFields() {
           label="Senha"
           variant="outlined"
           name="password"
+          required={true}
           value={user.password}
           onChange={valueInput}
         />
@@ -125,6 +131,7 @@ function ValidationTextFields() {
           label="Como devemos chamar você?"
           variant="outlined"
           name="name"
+          required={true}
           value={user.name}
           onChange={valueInput}
         />
@@ -133,6 +140,7 @@ function ValidationTextFields() {
           type='date'
           variant="outlined"
           name="date"
+          required={true}
           value={user.date}
           onChange={valueInput}
         />
