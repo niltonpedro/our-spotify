@@ -47,6 +47,10 @@ const Navbar = () => {
     },
   });
 
+  const Logout = () => {
+     localStorage.removeItem('usuarioLogado');
+  }
+
   return (
     <ThemeProvider theme={darkTheme}>
       <AppBar position="static" color='primary' >

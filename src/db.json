@@ -3,20 +3,20 @@
         {
             "id_usuario": 1,
             "nome": "usuario1",
-            "email": "email1@provedor.com",
-            "senha": 123
+            "email": "glauber@dev.com",
+            "senha": "123"
         },
         {
             "id_usuario": 2,
             "nome": "usuario2",
-            "email": "email2@provedor.com",
-            "senha": 1234
+            "email": "gean@dev.com",
+            "senha": "1234"
         },
         {
             "id_usuario": 3,
             "nome": "usuario3",
-            "email": "email3@provedor.com",
-            "senha": 12345
+            "email": "wesley@dev.com",
+            "senha": "12345"
         }
     ]
 }
