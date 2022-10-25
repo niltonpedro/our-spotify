@@ -14,18 +14,20 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import logo from '../../assets/menu/logoSpotify.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const pages = ['Home', 'Faq', 'Inscrever-se'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['Perfil', 'Conta', 'Dashboard', 'Sair'];
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const navegacao = useNavigate();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
@@ -36,6 +38,7 @@ const Navbar = () => {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
+    Logout();
   };
 
   const darkTheme = createTheme({
@@ -48,7 +51,8 @@ const Navbar = () => {
   });
 
   const Logout = () => {
-     localStorage.removeItem('usuarioLogado');
+    localStorage.removeItem('usuarioLogado');
+    navegacao('/login');
   }
 
   return (
