@@ -145,7 +145,7 @@ const Navbar = () => {
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   <Link to={`${'/' + page}`}>
-                    {page}
+                    <span style={{ color: '#FFFFFF', textDecoration: 'underline black' }}>{page}</span>
                   </Link>
                 </Button>
               ))}

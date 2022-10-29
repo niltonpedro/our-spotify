@@ -6,7 +6,8 @@ import '../RegistrationForm/RegistrationForm.css';
 import logo from '../../assets/menu/logoSpotify2.png';
 import users from './users';
 import { Link } from 'react-router-dom';
-import Home from '../Home/Home';
+//import Home from '../Home/Home';
+import axios from 'axios';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,6 +17,24 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
+
+async function adicionarUsuario({usuario}) {
+  const adUser = {
+    nome: usuario.name,
+    email: usuario.email,
+    senha: usuario.password
+  }
+
+  let apiReturn = await axios.post('http://localhost:3001/usuarios/', adUser)
+    .then(async function (response) {
+      return response;
+    })
+    .catch(function (error) {
+      console.log("erro:");
+      console.log(error);
+    });
+  return apiReturn;
+}
 
 function ValidationTextFields() {
   const classes = useStyles();
@@ -72,6 +91,7 @@ function ValidationTextFields() {
         password: '',
         date: ''
       });
+      adicionarUsuario({usuario});
       console.log(status);
     } else {
       setStatus({

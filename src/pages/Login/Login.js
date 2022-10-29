@@ -3,7 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import '../RegistrationForm/RegistrationForm.css';
 import logo from '../../assets/menu/logoSpotify2.png';
 import { Link, useNavigate} from 'react-router-dom';
-import axios from 'axios'
+import axios from 'axios';
 
 function Login() {
     const [email, setEmail] = useState('');

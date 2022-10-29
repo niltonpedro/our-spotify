@@ -1,22 +1,22 @@
 {
-    "usuario": [
-        {
-            "id_usuario": 1,
-            "nome": "usuario1",
-            "email": "glauber@dev.com",
-            "senha": "123"
-        },
-        {
-            "id_usuario": 2,
-            "nome": "usuario2",
-            "email": "gean@dev.com",
-            "senha": "1234"
-        },
-        {
-            "id_usuario": 3,
-            "nome": "usuario3",
-            "email": "wesley@dev.com",
-            "senha": "12345"
-        }
-    ]
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "usuario1",
+      "email": "glauber@dev.com",
+      "senha": "123"
+    },
+    {
+      "id": 2,
+      "nome": "usuario2",
+      "email": "gean@dev.com",
+      "senha": "1234"
+    },
+    {
+      "id": 3,
+      "nome": "usuario3",
+      "email": "wesley@dev.com",
+      "senha": "12345"
+    }
+  ]
 }
