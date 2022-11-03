@@ -14,7 +14,7 @@ function Login() {
     function enviar(e) {
         e.preventDefault();
 
-        axios.get(`http://localhost:3001/usuario?email=${email}`)
+        axios.get(`http://localhost:3001/usuarios?email=${email}`)
             .then((res) => {
                 const usuario = res.data[0];
 
@@ -62,8 +62,6 @@ function Login() {
             Entrar
             </button>
         </form>
-
-        {     console.log(setEmail.value) }
     </>
     );
 }
