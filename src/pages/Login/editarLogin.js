@@ -11,55 +11,83 @@ function FormEditProfile() {
   const navegacao = useNavigate();
 
   const [user, setUser] = useState({
-    name: '',
+    nome: '',
     email: '',
-    senha: '',
-    id: ''
+    senha: ''
   });
 
+  async function buscarUsuario() {   //async para pegar dados do servidor e manter o usuario livre
+    let userLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+    let apiReturn = await axios.get(`http://localhost:3001/usuarios/?email=${userLogado.email}`) 
+      .then(async function (response) {
+        setUser(response.data[0]);
+        console.log(user);
+      })
+      .catch(function (error) {
+        console.log("erro:");
+        console.log(error);
+      });
+    return apiReturn;
+  }
+
     //Receber os dados do formulário
-    const valueInput = e => setUser({
+    /*const valueInput = e => setUser({
+   
+    [e.target.setUser.nome]: e.target.value,
+    [e.target.setUser.email]: e.target.value,
+    [e.target.setUser.senha]: e.target.value
+
+
+    });*/
+
+    //Receber os dados do formulário
+  const valueInput = e => setUser({
     ...user,
     [e.target.name]: e.target.value
-    });
+  });
   
-  useEffect(() => {
-    axios.get(`http://localhost:3001/usuario?email=${localStorage.getItem("email") ?? sessionStorage.getItem("email")}`).then((response) => {
+ /* useEffect(() => {
+    axios.get(`http://localhost:3001/usuarios?email=${localStorage.getItem("email") ?? sessionStorage.getItem("email")}`).then((response) => {
       setUser.email(response.data[0].email);
       setUser.nome(response.data[0].nome);
       setUser.senha(response.data[0].senha);
       setUser.id(response.data[0].id);
     })
+  }, []);*/
+
+  useEffect(() => {
+    buscarUsuario();
   }, []);
 
   const handleSubmit = event => {
     event.preventDefault();
 
-    if(!setUser.email || !setUser.nome || !setUser.senha){
+    if(!user.email || !user.nome || !user.senha){
+
       alert("Por favor, preencha todos os campo")
       return;
     }
 
-    axios.patch(`http://localhost:3001/usuario/${setUser.id}`,
+    axios.patch(`http://localhost:3001/usuarios/${user.id}`,
       {
-        email: setUser.email,
-        nome:  setUser.nome,
-        senha: setUser.senha
+        email: user.email,
+        nome:  user.nome,
+        senha: user.senha
       }
-    ).then(() => {
-      setUser.email("");
-      setUser.senha("");
-      setUser.nome("");
+    ).then(function(response){
+      user.email = "";
+      user.senha = "";
+      user.nome = "";
       
       if(sessionStorage && sessionStorage.getItem("nome")){
-        sessionStorage.setItem("nome", setUser.nome);
-        sessionStorage.setItem("email", setUser.email);
-        sessionStorage.setItem("senha", setUser.senha);
+        sessionStorage.setItem("nome", user.nome);
+        sessionStorage.setItem("email", user.email);
+        sessionStorage.setItem("senha", user.senha);
       }
       if(localStorage && localStorage.getItem("nome")){
-        localStorage.setItem("nome", setUser.nome);
-        localStorage.setItem("email", setUser.email);
-        localStorage.setItem("senha", setUser.senha);
+        localStorage.setItem("nome", user.nome);
+        localStorage.setItem("email", user.email);
+        localStorage.setItem("senha", user.senha);
       }
       alert("Edição realizada");
       
@@ -79,40 +107,31 @@ function FormEditProfile() {
   <h3 >Alterar dados cadastrados</h3>
   <TextField
     id="email"
-    label="E-mail"
     variant="outlined"
     name="email"
     required={true}
-    value={setUser.email}
     onChange={valueInput}
+    value={user.email}
   />
 
   <TextField
     id="senha"
     type='password'
-    label="Senha"
     variant="outlined"
     name="senha"
     required={true}
-    value={setUser.senha}
     onChange={valueInput}
+    value={user.senha}
   />
 
   <TextField
     id="nomeuser"
-    label="Seu nome"
     variant="outlined"
-    name="name"
+    name="nome"
     required={true}
-    value={setUser.nome}
     onChange={valueInput}
+    value={user.nome}
   />
-
-  <div className='checkbox'>
-    <input type='radio' name='genero' onChange={valueInput} />Masculino
-    <input type='radio' name='genero' onChange={valueInput} />Feminino
-    <input type='radio' name='genero' onChange={valueInput} />Não binário
-  </div>
   <button className='btn'>
     Alterar
   </button>
