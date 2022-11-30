@@ -5,21 +5,25 @@ import BilieElish from '../playlists/BilieElish'
 
 const musics = [
     {
+        id: 1,
         title: 'This is Bilie Elish',
         nameMusic: 'All good girls',
         artist: 'Billie elish',
     },
     {
+        id: 2,
         title: 'You make me hate this city',
         nameMusic: 'You make me hate this city',
         artist: 'Billie elish and Dua Lipa',
     },
     {
+        id: 3,
         title: 'Nowdays paranoia',
         nameMusic: 'Nowdays paranoia',
         artist: 'Billie elish and Post malone',
     },
     {
+        id: 4,
         title: 'Think out',
         nameMusic: 'Think out',
         artist: 'Billie elish',

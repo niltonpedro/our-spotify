@@ -5,18 +5,22 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import bilie from '../../assets/homepage/bilie.jpg';
-import acdc from '../../assets/homepage/AcDc.jpg';
-import bastille from '../../assets/homepage/bastille.jpg';
-import bossaMarley from '../../assets/homepage/bossaMarley.jpg';
-import lastdino from '../../assets/homepage/lastdino.webp';
-import number1 from '../../assets/homepage/number1.jpg';
-import redHot from '../../assets/homepage/red_Hot.jpg';
-import slipknot from '../../assets/homepage/slipknot.jpg';
+//import bilie from '../../assets/homepage/bilie.jpg';
+//import acdc from '../../assets/homepage/AcDc.jpg';
+//import bastille from '../../assets/homepage/bastille.jpg';
+//import bossaMarley from '../../assets/homepage/bossaMarley.jpg';
+//import lastdino from '../../assets/homepage/lastdino.webp';
+//import number1 from '../../assets/homepage/number1.jpg';
+//import redHot from '../../assets/homepage/red_Hot.jpg';
+//import slipknot from '../../assets/homepage/slipknot.jpg';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+
+
 
 
 export default function Playlist() {
-    const dadosPlays = [
+    /* const dadosPlays = [
         {
             id: 1,
             title: 'this is bilie Elish', 
@@ -51,7 +55,7 @@ export default function Playlist() {
             id: 5,
             title: 'this is Bastile', 
             description: 'Billie Eilish Pirate Baird OConnell,mais conhecida como Billie Eilish, é uma cantora e compositora estadunidense.', 
-            callAction: 'Escutar Playlist bilie!',
+            callAction: 'Escutar Playlist Bastile!',
             image: bastille
         },
         {
@@ -76,7 +80,23 @@ export default function Playlist() {
             image: slipknot
         },
 
-    ]
+    ] */
+
+    const [dadosPlays, setDadosPlays] = useState([]);
+
+    async function getPlaylist(){
+        const response = await axios.get(`http://localhost:3001/playlists`);
+        const play = await response.data;
+        setDadosPlays(play);
+    }
+
+    useEffect(() => {
+        getPlaylist();
+    }, [])
+
+    //const pathImage = "../../assets/homepage/bilie.jpg";
+
+    console.log(dadosPlays);
 
    return(
     // <div>
@@ -87,21 +107,21 @@ export default function Playlist() {
                         <CardMedia
                         component="img"
                         height="140"
-                        image={play.image}
-                        alt="Bilie album"
+                        src="../../assets/homepage/bilie.jpg"
+                        alt={play.capa}
                         />
                             <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
-                                {play.title}
+                                {play.titulo}
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                {play.description} 
+                                {play.descricao} 
                             </Typography>
                             </CardContent>
                     </CardActionArea>
                     <CardActions>
                         <Button size="small"  href='/playlist' >
-                            {play.callAction}
+                            {play.callaction}
                         </Button>
                     </CardActions>
                 </Card>
